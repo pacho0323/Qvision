@@ -1,0 +1,24 @@
+plugins {
+    id 'java-library'
+    id 'java'
+}
+
+dependencies {    
+     compile 'net.serenity-bdd:serenity-core:1.9.9'
+    compile 'net.serenity-bdd:serenity-junit:1.9.9'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
+    compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
+    compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.0'
+        compile 'org.apache.logging.log4j:log4j-api:2.6.1'
+    compile 'org.apache.logging.log4j:log4j-core:2.6.1'
+    // https://mvnrepository.com/artifact/com.codoid.products/fillo
+compile group: 'com.codoid.products', name: 'fillo', version: '1.21'
+    } 
+repositories {    
+    jcenter()
+}
