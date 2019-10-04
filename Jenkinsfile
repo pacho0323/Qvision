@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SHELL') {
       steps {
-        sh 'mvn clean install -Dlicense.skip=true'
+        sh 'gradle test'
       }
     }
   }
