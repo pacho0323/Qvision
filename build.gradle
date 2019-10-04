@@ -1,7 +1,26 @@
-plugins {
-    id 'java-library'
-    id 'java'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java-library'
+
+repositories {
+    mavenLocal()
+    jcenter()
 }
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9") 
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'  
 
 dependencies {    
      compile 'net.serenity-bdd:serenity-core:1.9.9'
@@ -19,6 +38,10 @@ dependencies {
     // https://mvnrepository.com/artifact/com.codoid.products/fillo
 compile group: 'com.codoid.products', name: 'fillo', version: '1.21'
     } 
-repositories {    
-    jcenter()
+tasks.withType(Test){
+    systemProperties = System.properties
+    maxParallelForks = Runtime.runtime.availableProcessors()
 }
+
+
+gradle.startParameter.continueOnFailure = true
