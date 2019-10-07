@@ -1,1 +1,1 @@
-hola soy feature2
+ejecutar automatización
