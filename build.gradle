@@ -13,7 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9") 
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.8") 
     }
 }
 
