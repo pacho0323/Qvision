@@ -35,7 +35,9 @@ public class AgenciaDeViajesStepDefinitions {
 	    agenciaDeViajes.abrirSegundoCalendario();
 	    agenciaDeViajes.seleccionarFechaDos(datos.get(4),datos.get(5),datos.get(6));
 	    agenciaDeViajes.seleccionarRooms(datos.get(7));
-	    agenciaDeViajes.seleccionarAdultos(datos.get(8));
+		System.out.println(datos.get(8));
+		String greeting = System.getenv("dato");
+	    agenciaDeViajes.seleccionarAdultos(greeting);
 	    agenciaDeViajes.seleccionarChildren(datos.get(9));
 	    agenciaDeViajes.buscarHotel();
 	}
