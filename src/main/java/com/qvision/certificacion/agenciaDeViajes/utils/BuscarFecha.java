@@ -21,6 +21,7 @@ public BuscarFecha(WebElement mesInicial, WebElement btnNext, List<WebElement> l
 	this.dia = dia;
 }
 public void seleccionarFecha() throws InterruptedException {
+     Thread.sleep(2000);
 	boolean a=true;
 	while(a) {
 	if(mesInicial.getText().contains(mes) && mesInicial.getText().contains(ano) ) {
