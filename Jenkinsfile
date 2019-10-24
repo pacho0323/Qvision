@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!groovy
 
 node {
@@ -50,4 +51,26 @@ node {
    stage 'Archivar'
    echo 'Archiva el paquete el paquete generado en Jenkins'
    step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar, **/target/*.war', fingerprint: true])
+=======
+pipeline {
+    agent any
+    stages {
+        stage('limpiar el proyecto') {
+            steps {
+               bat 'gradle clean build -x test'
+            }
+        }
+        stage('compilar') {
+            steps {
+               bat 'gradle build'
+            }
+        }
+        stage('ejecutar test') {
+            steps {
+               bat 'gradle test'
+            }
+        }
+
+}
+>>>>>>> master
 }
