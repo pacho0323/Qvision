@@ -69,7 +69,7 @@ public class AgenciaDeViajesPages extends PageObject {
 		buscarFecha.seleccionarFecha();
 	}
 
-	public void abrirSegundoCalendario()  {
+	public void abrirSegundoCalendario() throws InterruptedException  {
 		calendarioDos.click();
 	}
 
