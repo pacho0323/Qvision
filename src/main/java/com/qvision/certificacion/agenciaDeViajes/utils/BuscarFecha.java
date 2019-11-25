@@ -21,11 +21,11 @@ public BuscarFecha(WebElement mesInicial, WebElement btnNext, List<WebElement> l
 	this.dia = dia;
 }
 public void seleccionarFecha() throws InterruptedException {
-     Thread.sleep(2000);
+     Thread.sleep(3000);
 	boolean a=true;
 	while(a) {
 	if(mesInicial.getText().contains(mes) && mesInicial.getText().contains(ano) ) {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		for(WebElement e : ltDias) { 
 			  if(e.getText().equals(dia)) { 
 				  e.click();
