@@ -42,6 +42,14 @@ tasks.withType(Test){
     systemProperties = System.properties
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
+task prueba {
+    def person = new XmlSlurper().parse(new File('prueba.xml'))
+    // Modify an attribute
+    person.name.@first = '2'
+    String result = groovy.xml.XmlUtil.serialize(person )
+    def fichero = new File('prueba.xml')
+    fichero.write(result)
 
+}
 
 gradle.startParameter.continueOnFailure = true

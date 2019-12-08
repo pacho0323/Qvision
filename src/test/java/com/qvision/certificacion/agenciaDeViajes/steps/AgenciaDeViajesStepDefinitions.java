@@ -23,6 +23,7 @@ public class AgenciaDeViajesStepDefinitions {
 	
 	@Given("^que el usuario se encuentre en la pagina web$")
 	public void queElUsuarioSeEncuentreEnLaPaginaWeb()  {	    
+
 		agenciaDeViajes.open();
 	}
 

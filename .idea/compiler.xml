@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Reto_AgenciaDeViajes.main" target="11" />
-      <module name="Reto_AgenciaDeViajes.test" target="11" />
+      <module name="Reto_AgenciaDeViajes.main" target="1.8" />
+      <module name="Reto_AgenciaDeViajes.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

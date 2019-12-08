@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><person>
+<name last="Kafka" first="2"/>
+<age>27</age>
+<address>
+<street>Goltz-Kinsky</street>
+<number>123</number>
+<city>Prague</city>
+</address>
+<achievements>
+<name>The trial</name>
+<name>The castle</name>
+</achievements>
+<private>xxx</private>
+</person>
